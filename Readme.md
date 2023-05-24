@@ -1,0 +1,1 @@
+Óla esse projeto ensina você a criar um bot de investimentos
