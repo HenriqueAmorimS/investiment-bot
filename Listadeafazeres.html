@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h1>Lista prográmatica de desenvolvimento do programa</h1>
+
+<ul id="lista">
+    <li> 1. Funcionamento do git e github: entender a sintaxe do programa. </li>
+    <li> 2. Hospedagem de url no github para acrescentar o projeto no meu git. </li>
+    <li> 3. Analisar manual de investimentos e seus termos</li>
+    <li> 4. Esquematizar a programação do projeto</li>
+    <li> 5. Desenvolver os modulos</li>
+</ul>
+
+
+<br>
+Para continuar vendo a progressão visite: <a href="https://techguide.sh/pt-BR/path/python/">aqui</a>!
+
+<script>
+
+	alert("Lista do desenvolvimento do meu bot - Investimentos");
+
+   
+    function pulaLinha() {
+
+        document.write("<br>");	
+        document.write("<br>");	
+    }
+    
+    function addCheckbox() {
+        const lista = document.getElementById('lista');
+        const itens = lista.getElementsByTagName('li');
+        pulaLinha();
+
+        for (let i = 0; i < itens.length; i++) {
+            const checkboxHTML = '<input type="checkbox">';
+            itens[i].insertAdjacentHTML('afterbegin', checkboxHTML);
+        }
+        
+    }
+
+    addCheckbox();
+    
+    
+</script>
